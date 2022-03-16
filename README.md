@@ -50,7 +50,7 @@ Data Factory also has Triggers, and you can configure a Trigger to schedule the 
 
 
 -**_Databricks:_**: I´ve created a Databricks resource named **"databricks-challenge"** and a cluster named **"clusterjs"**
-After that I develop a notebook named **"data-engineering-challenge"** to ingest and store the trips data
+After that I develop a PySpark notebook named **"data-engineering-challenge"** to ingest and store the trips data
 
 ![image](https://user-images.githubusercontent.com/101717820/158703594-6e6736bc-4e5c-4b7c-b60a-58e7ba675a7b.png)
 
@@ -60,11 +60,34 @@ Lets discuss further about the notebook steps:
 
 ![image](https://user-images.githubusercontent.com/101717820/158703948-ea6f34cb-820e-4c32-a8be-2ef8d181a987.png)
 
+- The steps bellow is used to import necessary libraries and Read the "trips.csv" file into a spark dataframe:
 
+![image](https://user-images.githubusercontent.com/101717820/158704611-c76a11f1-8387-4d9a-a252-e2066d26e0aa.png)
 
+and then convert origin and destination geometric points into and long and calculated the distance using Haversine formula:
 
+![image](https://user-images.githubusercontent.com/101717820/158704752-5815f583-4b1b-40ce-ac84-aee7675edb52.png)
 
+and created distange ranges for grouping:
+![image](https://user-images.githubusercontent.com/101717820/158705039-784ad0e2-35e7-4924-88db-b2d967b3f3bb.png)
 
+after that I plotted the points using Folium library and folium plugin MarkerCluster:
+
+![image](https://user-images.githubusercontent.com/101717820/158705160-2f78daff-bfab-4e13-bb68-01939cbb4902.png)
+
+![image](https://user-images.githubusercontent.com/101717820/158705230-74d22687-3298-4827-b213-9b2f837f4e78.png)
+
+After that I calculated the average number of thips for an area:
+
+![image](https://user-images.githubusercontent.com/101717820/158705361-21a6c9dc-29ad-4fab-90ea-7eae783a07bc.png)
+
+and then loaded the final dataframe into  SQL Server:
+
+![image](https://user-images.githubusercontent.com/101717820/158705445-47626e5c-2048-4587-a1fe-d069393f99fc.png)
+
+There is also a final Command that replicates the final dataframe and generate 100 million rows for proof of scalability. It tooked around 21 minutes to load 100 million rows into SQL Server:
+
+![image](https://user-images.githubusercontent.com/101717820/158705614-c4a365d2-7cc6-4a5d-9bef-2af0230608c0.png)
 
 
 
