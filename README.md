@@ -77,7 +77,7 @@ after that I plotted the points using Folium library and folium plugin MarkerClu
 
 ![image](https://user-images.githubusercontent.com/101717820/158705230-74d22687-3298-4827-b213-9b2f837f4e78.png)
 
-After that I calculated the average number of thips for an area:
+After that I calculated the average number of trips for an area:
 
 ![image](https://user-images.githubusercontent.com/101717820/158705361-21a6c9dc-29ad-4fab-90ea-7eae783a07bc.png)
 
@@ -88,6 +88,26 @@ and then loaded the final dataframe into  SQL Server:
 There is also a final Command that replicates the final dataframe and generate 100 million rows for proof of scalability. It tooked around 21 minutes to load 100 million rows into SQL Server:
 
 ![image](https://user-images.githubusercontent.com/101717820/158705614-c4a365d2-7cc6-4a5d-9bef-2af0230608c0.png)
+
+
+**_Azure SQl Server Database:_** I´ve created a SQL Server resource named "challengejobsity" in order to load the final data.
+
+- These are the connections configurations if needed:
+    servername: challengejobsity.database.windows.net
+    database: db_challengejobsity
+    admin login: challengeadmin
+    admin password: challenge123*
+
+The solution in scalable:
+
+![image](https://user-images.githubusercontent.com/101717820/158706358-15f25b72-4c87-436c-9fc9-ec8c55d514ed.png)
+
+
+![image](https://user-images.githubusercontent.com/101717820/158706422-3ec9ce07-507b-41e3-903d-fc357aec5180.png)
+
+
+
+
 
 
 
