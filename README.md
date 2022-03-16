@@ -68,24 +68,27 @@ and then convert origin and destination geometric points into LAT and LONG and c
 
 ![image](https://user-images.githubusercontent.com/101717820/158704752-5815f583-4b1b-40ce-ac84-aee7675edb52.png)
 
-and created distange ranges for grouping:
+and created distange ranges for grouping  **This responds mandatory Feature -> Trips with similar origin, destination, and time of day should be grouped together**
+ 
 ![image](https://user-images.githubusercontent.com/101717820/158705039-784ad0e2-35e7-4924-88db-b2d967b3f3bb.png)
 
-after that I plotted the points using Folium library and folium plugin MarkerCluster:
+after that I plotted the points using Folium library and folium plugin MarkerCluster: **This responds mandatory Feature -> Develop a way to obtain the weekly average number of trips for an area, defined by a bounding box (given by coordinates) or by a region.**
+ 
 
 ![image](https://user-images.githubusercontent.com/101717820/158705160-2f78daff-bfab-4e13-bb68-01939cbb4902.png)
 
 ![image](https://user-images.githubusercontent.com/101717820/158705230-74d22687-3298-4827-b213-9b2f837f4e78.png)
 
-After that I calculated the average number of trips for an area:
+After that I calculated the average number of trips for an area: **This responds mandatory Feature -> Develop a way to obtain the weekly average number of trips for an area, defined by a bounding box (given by coordinates) or by a region.**
 
 ![image](https://user-images.githubusercontent.com/101717820/158705361-21a6c9dc-29ad-4fab-90ea-7eae783a07bc.png)
 
-and then loaded the final dataframe into  SQL Server:
+and then loaded the final dataframe into  SQL Server:  **This responds mandatory Feature -> Use a SQL database.**
 
 ![image](https://user-images.githubusercontent.com/101717820/158705445-47626e5c-2048-4587-a1fe-d069393f99fc.png)
 
-There is also a final Command that replicates the final dataframe and generate 100 million rows for proof of scalability. It tooked around 21 minutes to load 100 million rows into SQL Server:
+There is also a final Command that replicates the final dataframe and generate 100 million rows for proof of scalability. It tooked around 21 minutes to load 100 million rows into SQL Server: **This responds mandatory Feature -> The solution should be scalable to 100 million entries. It is encouraged to simplify the
+data by a data model. Please add proof that the solution is scalable.**
 
 ![image](https://user-images.githubusercontent.com/101717820/158705614-c4a365d2-7cc6-4a5d-9bef-2af0230608c0.png)
 
@@ -98,7 +101,8 @@ There is also a final Command that replicates the final dataframe and generate 1
     admin login: challengeadmin
     admin password: challenge123*
 
-The solution in scalable (*remember you can also scale databricks cluster always needed):
+The solution in scalable (*remember you can also scale databricks cluster always needed): **This responds mandatory Feature -> The solution should be scalable to 100 million entries. It is encouraged to simplify the
+data by a data model. Please add proof that the solution is scalable.**
 
 ![image](https://user-images.githubusercontent.com/101717820/158706358-15f25b72-4c87-436c-9fc9-ec8c55d514ed.png)
 
@@ -110,22 +114,3 @@ The solution in scalable (*remember you can also scale databricks cluster always
 
 ![image](https://user-images.githubusercontent.com/101717820/158707520-2126435b-db69-4e4a-b481-dd19f5861492.png)
 
-
-
-
-
-
-<!--
-**arleychallengejobsity/arleychallengejobsity** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
