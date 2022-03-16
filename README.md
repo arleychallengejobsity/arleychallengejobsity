@@ -98,7 +98,7 @@ There is also a final Command that replicates the final dataframe and generate 1
     admin login: challengeadmin
     admin password: challenge123*
 
-The solution in scalable:
+The solution in scalable (*remember you can also scale databricks cluster always needed):
 
 ![image](https://user-images.githubusercontent.com/101717820/158706358-15f25b72-4c87-436c-9fc9-ec8c55d514ed.png)
 
@@ -106,6 +106,9 @@ The solution in scalable:
 ![image](https://user-images.githubusercontent.com/101717820/158706422-3ec9ce07-507b-41e3-903d-fc357aec5180.png)
 
 
+**Bonus features:**
+
+![image](https://user-images.githubusercontent.com/101717820/158707520-2126435b-db69-4e4a-b481-dd19f5861492.png)
 
 
 
