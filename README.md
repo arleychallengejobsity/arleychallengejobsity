@@ -9,13 +9,14 @@ Since I´m an Azure Data Engineer, I used the following Azure resources in order
 ![image](https://user-images.githubusercontent.com/101717820/158699501-57ed0fa8-6976-490d-8ab1-77d97fb4fecd.png)
 
 
-## Logging into Azure:
+## Logging into Azure (portal.azure.com):
 - For the challenge purpose I´ve created a Free Azure Subscription that Jobsity can use for testing and validating the challenge solution:
 - Login: arleychallengejobsity@outlook.com
 - Password: challenge123*
 
 
 ## Resources Creation and configuration:
+### (Bonus feature: Sketch up how you would set up the application using any cloud provider (AWS, Google Cloud, etc))
 **_Azure Storage Account (Data Lake):_** 
   I´ve create a storage account resource named **"challengejobsity"** and a blob container named **"trips"**. Inside trips container I created a folder named **"RAW"** and inside RAW folder uploaded the **_"trips.csv"_** file as seen in bellow image:
 
@@ -87,21 +88,21 @@ and then loaded the final dataframe into  SQL Server:  **This responds mandatory
 
 ![image](https://user-images.githubusercontent.com/101717820/158705445-47626e5c-2048-4587-a1fe-d069393f99fc.png)
 
-There is also a final Command that replicates the final dataframe and generate 100 million rows for proof of scalability. It tooked around 21 minutes to load 100 million rows into SQL Server: **This responds mandatory Feature -> The solution should be scalable to 100 million entries. It is encouraged to simplify the
+There is also a final Command that replicates the final dataframe and generates 100 million rows for proof of scalability. It tooked around 21 minutes to load 100 million rows into SQL Server: **This responds mandatory Feature -> The solution should be scalable to 100 million entries. It is encouraged to simplify the
 data by a data model. Please add proof that the solution is scalable.**
 
 ![image](https://user-images.githubusercontent.com/101717820/158705614-c4a365d2-7cc6-4a5d-9bef-2af0230608c0.png)
 
 
-**_Azure SQl Server Database:_** I´ve created a SQL Server resource named "challengejobsity" in order to load the final data.
+**_Azure SQL Server Database:_** I´ve created a SQL Server resource named "challengejobsity" in order to load the final data.
 
 - These are the connections configurations if needed:
-    servername: challengejobsity.database.windows.net
-    database: db_challengejobsity
-    admin login: challengeadmin
-    admin password: challenge123*
+    - servername: challengejobsity.database.windows.net
+    - database: db_challengejobsity
+    - admin login: challengeadmin
+    - admin password: challenge123*
 
-The solution in scalable (*remember you can also scale databricks cluster always needed): **This responds mandatory Feature -> The solution should be scalable to 100 million entries. It is encouraged to simplify the
+The solution is scalable (*remember you can also scale databricks cluster always needed): **This responds mandatory Feature -> The solution should be scalable to 100 million entries. It is encouraged to simplify the
 data by a data model. Please add proof that the solution is scalable.**
 
 ![image](https://user-images.githubusercontent.com/101717820/158706358-15f25b72-4c87-436c-9fc9-ec8c55d514ed.png)
