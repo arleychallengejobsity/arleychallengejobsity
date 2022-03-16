@@ -40,18 +40,16 @@ and added this service-principal with Contributor Access in datalake:
   - **Note** : for challenge purpose I will starting reading the trips file from datalake, but thinking about a real scenario you'll probably starting picking up the trips file from a FTP or a File System for example and loading into RAW or STAGE layer into your datalake
 
 
-**_Azure Data Factory:_** I´ve created a Data Factory resource named **"datafactorychallenge"**  for pipeline orchestration. I created a pipeline named "_pipe_challenge_jobsity_". this pipeline controls the databricks notebook execution and send status to log actitivy (log is then sended to a table named [dbo].[EXECUTION_LOGS] in SQL Server. **This responds mandatory Feature Develop a way to inform the user about the status of the data ingestion without using a polling solution**
+**_Azure Data Factory:_** I´ve created a Data Factory resource named **"datafactorychallenge"**  for pipeline orchestration. I created a pipeline named "_pipe_challenge_jobsity_". this pipeline controls the databricks notebook execution and send status to log actitivy (log is then sended to a table named [dbo].[EXECUTION_LOGS] in SQL Server. **This responds mandatory Feature -> Develop a way to inform the user about the status of the data ingestion without using a polling solution**
 
 ![image](https://user-images.githubusercontent.com/101717820/158702830-e1667361-feb3-4e68-a647-c714a66fb457.png)
 
-Data Factory also has Triggers, and you can configure a Trigger to schedule this pipeline execution  **There must be an automated process to ingest and store the data**
+Data Factory also has Triggers, and you can configure a Trigger to schedule the pipeline execution  **This responds mandatory Feature -> There must be an automated process to ingest and store the data**
 
 ![image](https://user-images.githubusercontent.com/101717820/158702963-a37315b4-5474-4eef-8e12-8690dc0f54f1.png)
 
 
-
-
-Data Factory will start databricks cluster to control notebook execution.
+Data Factory will then start databricks cluster to control notebook execution.
 - 
 ![image](https://user-images.githubusercontent.com/101717820/158646114-6200a1d5-cda6-48d5-b15a-3046f9dbe17b.png)
 
