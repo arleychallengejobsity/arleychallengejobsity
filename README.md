@@ -11,13 +11,14 @@ Since I´m an Azure Data Engineer, I used the following Azure resources in order
 
 
 ## Logging in Azure:
-- For the challenge purpose I´ve created a Free Azure Subscription that Jobsity can use for testing and validating the challenge:
+- For the challenge purpose I´ve created a Free Azure Subscription that Jobsity can use for testing and validating the challenge solution:
 - Login: arleychallengejobsity@outlook.com
 - Password: challenge123*
 
 
 ## Resources Creation and configuration:
-- Azure Storage Account (Data Lake): I´ve create a storage account resource named **"challengejobsity"** and a blob container named **"trips"**. Inside trips container I created a folder named **"RAW"** and inside RAW folder uploaded the **_"trips.csv"_** file as you seen in bellow image:
+- **_Azure Storage Account (Data Lake):_** I´ve create a storage account resource named **"challengejobsity"** and a blob container named **"trips"**. Inside trips container I created a folder named **"RAW"** and inside RAW folder uploaded the **_"trips.csv"_** file as seen in bellow image:
+  - **Note** : for challenge purpose I will starting reading the trips file from datalake, but thinking about a real scenario you'll probably starting picking up the trips file from an FTP or a File System for example and loading into RAW or STAGE layer in your datalake
 
 ![image](https://user-images.githubusercontent.com/101717820/158619139-06a37e50-d790-4550-bb23-8cb0ca610687.png)
 
