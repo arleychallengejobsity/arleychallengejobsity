@@ -49,12 +49,16 @@ Data Factory also has Triggers, and you can configure a Trigger to schedule the 
 ![image](https://user-images.githubusercontent.com/101717820/158702963-a37315b4-5474-4eef-8e12-8690dc0f54f1.png)
 
 
-Data Factory will then start databricks cluster to control notebook execution.
-- 
-![image](https://user-images.githubusercontent.com/101717820/158646114-6200a1d5-cda6-48d5-b15a-3046f9dbe17b.png)
+-**_Databricks:_**: I´ve created a Databricks resource named **"databricks-challenge"** and a cluster named **"clusterjs"**
+After that I develop a notebook named **"data-engineering-challenge"** to ingest and store the trips data
+
+![image](https://user-images.githubusercontent.com/101717820/158703594-6e6736bc-4e5c-4b7c-b60a-58e7ba675a7b.png)
+
+Lets discuss further about the notebook steps:
 
 
-- **_Databricks:_**: I´ve created a Databricks resource and cluster (Free tier only per
+
+
 
 
 
