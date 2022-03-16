@@ -18,11 +18,16 @@ Since I´m an Azure Data Engineer, I used the following Azure resources in order
 
 ## Resources Creation and configuration:
 - **_Azure Storage Account (Data Lake):_** I´ve create a storage account resource named **"challengejobsity"** and a blob container named **"trips"**. Inside trips container I created a folder named **"RAW"** and inside RAW folder uploaded the **_"trips.csv"_** file as seen in bellow image:
-  - **Note** : for challenge purpose I will starting reading the trips file from datalake, but thinking about a real scenario you'll probably starting picking up the trips file from an FTP or a File System for example and loading into RAW or STAGE layer in your datalake
+  - **Note** : for challenge purpose I will starting reading the trips file from datalake, but thinking about a real scenario you'll probably starting picking up the trips file from a FTP or a File System for example and loading into RAW or STAGE layer into your datalake
 
 ![image](https://user-images.githubusercontent.com/101717820/158619139-06a37e50-d790-4550-bb23-8cb0ca610687.png)
 
+- **_Azure Data Factory:_** I´ve created a Data Factory resource named **"datafactorychallenge"**  for pipeline orchestration. Data Factory will start databricks cluster control notebook execution.
+- 
+![image](https://user-images.githubusercontent.com/101717820/158646114-6200a1d5-cda6-48d5-b15a-3046f9dbe17b.png)
 
+
+- **_Databricks:_**: I´ve created a Databricks resource and cluster (Free tier only per
 
 
 
