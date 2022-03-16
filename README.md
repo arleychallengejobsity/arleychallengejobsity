@@ -64,7 +64,7 @@ Lets discuss further about the notebook steps:
 
 ![image](https://user-images.githubusercontent.com/101717820/158704611-c76a11f1-8387-4d9a-a252-e2066d26e0aa.png)
 
-and then convert origin and destination geometric points into and long and calculated the distance using Haversine formula:
+and then convert origin and destination geometric points into LAT and LONG and calculated the distance using Haversine formula:
 
 ![image](https://user-images.githubusercontent.com/101717820/158704752-5815f583-4b1b-40ce-ac84-aee7675edb52.png)
 
