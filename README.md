@@ -56,6 +56,10 @@ After that I develop a notebook named **"data-engineering-challenge"** to ingest
 
 Lets discuss further about the notebook steps:
 
+- The first 2 commented steps was executed only once to mount databricks driver (here I used the configurations from the service-principal created before - **_Note:_** for the challenge development, the app Id, secret Id and Directory Id is open. FOR SURE in a production environment you MUST use a Key Vault to encrypt the keys) 
+
+![image](https://user-images.githubusercontent.com/101717820/158703948-ea6f34cb-820e-4c32-a8be-2ef8d181a987.png)
+
 
 
 
